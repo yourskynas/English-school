@@ -1,0 +1,495 @@
+html {
+    font-family: 'Nunito Sans', sans-serif;
+    --primary-color: #f97316;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f97316;  
+}
+
+.menu__hero {
+    background-image: url("landing-materials/hero.jpg");
+    height: 800px;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+}
+
+.menu__contents {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.header__logo {
+    height: 100px;
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    padding: 0 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color); 
+}
+
+.contact {
+    display: flex;
+    align-items: center; 
+}
+
+.contact__icon {
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+h1 {
+    margin-top: 150px;
+    font-size: 60px;
+    max-width: 50%;
+    font-weight: 600;
+}
+
+/* @media (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+} */
+
+.menu__text {
+    margin-top: 60px;
+    font-size: 20px;
+    max-width: 45%; 
+    font-weight: 200;
+    margin-bottom: 60px; 
+}
+
+.button-registration {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border-color: var(--primary-color);
+    padding: 15px 30px;
+    border: none;
+}
+
+.button-registration:hover {
+    background-color: #ea580c;
+}
+
+.button-registration:active {
+    background-color: #78716c;
+}
+
+.about-company {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+
+.about-company__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.about-company__section_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fafaf9;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.logo-in-box{
+    background-color: var(--primary-color);
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.text-in-box {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.text-box {
+    font-weight: 300;
+    color: #44403c;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+}
+
+about-us__text{
+    max-width: 45%;
+}
+.group-people {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+
+.about-us__text-item {
+    color: #44403c;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.registration {
+    background-color: #ffedd5;
+}
+
+.registration__section {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.form__box {
+    border-radius: 10px;
+    border: 1px solid #d6d3d1;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    outline: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.reviews {
+    background-color: #fafaf9;
+}
+
+.reviews__section {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 100px;
+}
+
+.reviews__name {
+    font-size: 19px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.reviews__text {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    border-bottom: 1px #d6d3d1 solid;
+}
+
+.subscription {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscription__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.subscription__section_box {
+    display: flex;
+    flex-direction: column;
+    border: 1px #d6d3d1 solid;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 40%;
+}
+
+.button-subscription{
+    background-color: #ffedd5;
+    border-radius: 10px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    font-size: 17px;
+    border-color: #ffedd5;
+    padding: 5px 5px;
+    border:none;
+}
+
+.button-subscription:hover {
+    background-color: var(--primary-color);
+    color: #ffedd5;
+}
+
+.button-subscription:active {
+    background-color: #78716c;
+    color: #ffedd5;
+}
+
+.subscription-text {
+    display: flex;
+    align-items: baseline;
+    align-content: space-around;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subs-logo {
+    margin-right: 10px;
+    color: #65a30d;
+    font-size: 16px;
+}
+
+
+.subs-title {
+font-size: 20px;
+color: var(--primary-color);
+padding: 10px 0 10px;
+}
+
+.subs-price {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #d6d3d1;
+}
+
+.cont {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #57534e;
+    align-items: center;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+.icons:hover {
+    color: var(--primary-color)
+}
+
+@media (max-width: 600px) {
+    .about-company__section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-in-box {
+        font-size: 25px;
+    }
+
+    .text-box {
+        font-size: 20px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .about-us__text-item {
+        font-size: 20px;
+    }
+
+    .group-people {
+        width: 80%;
+    }
+
+    .img_group-people {
+        display: flex;
+        justify-content: center;
+    }
+
+    .registration__form {
+        flex-direction: column;
+        width: 80%;
+        align-items: stretch;
+    }
+
+    .form__box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .button-in-form {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .reviews__section {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    .reviews__name {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .reviews__text {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    
+    .subscription__section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+
+    .subscription__section_box {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 35px;
+    }
+
+    .subscription-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .subs-logo {
+        font-size: 20px;
+    }
+
+    .subs-price {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .subs-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .button-subscription {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .cont {
+        flex-direction: column;
+    }
+
+    .cont-item {
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .menu__hero {
+        height: 100%;
+        /* opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 70px;
+    }
+
+    .menu__contents {
+        margin-left: 10px;
+    }
+
+    .menu__text {
+        max-width: 30%;
+        font-size: 25px;
+    }
+
+    .menu__button {
+        padding-bottom: 40px;
+    }
+
+    .button-in-menu {
+        width: 80%;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    header {
+        width: calc(100% / 2);
+        justify-content: flex-start;
+    }
+}
